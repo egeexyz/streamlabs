@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,700');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-family: "Barlow";
+}
+
+#custom_html{
+  width:315px;
+  height:440px;
+  float:right;
+}
+
+#log {
+  font: {font_size} sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: {text_color};
+}
+
+#log > div {
+  -webkit-animation: fadeOut 1s ease {message_hide_delay} forwards;
+          animation: fadeOut 1s ease {message_hide_delay} forwards;
+  word-wrap: break-word;
+}
+
+#log > div.deleted {
+  visibility: hidden;
+}
+
+#log .emote {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+
+#log .emote > img {
+  display: inline-block;
+  height: 1em;
+  opacity: 0;
+}
+
+#alert-symbol {
+	width: 56px;
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+  background: #57e5c0 url("https://uploads.twitchalerts.com/000/090/839/493/chat-icon.png") center center no-repeat;
+  clip-path: polygon(0px 22px, 28px 0px, 56px 22px, 52px 36px, 56px 50px, 28px 72px, 0px 50px, 4px 36px, 0px 22px);
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #155041;
+  vertical-align: middle;
+  font-size: 40px;
+  font-weight: bold;
+  animation: AlertIcon 4s cubic-bezier(.5,.29,0,1.43);
+  z-index: 999999;
+}
+
+#wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+#log {
+  margin: 0;
+  padding: 0 10px 10px 10px;
+  overflow: hidden;
+}
+
+#log > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-animation: fadeInUp 500ms ease, fadeOutUp 1s ease {message_hide_delay} forwards;
+          animation: fadeInUp 500ms ease, fadeOutUp 1s ease {message_hide_delay} forwards;
+}
+
+.name {
+  color: #fff !important;
+  font-family: "Barlow";
+  font-weight: 700;
+}
+
+.message {
+  color: #fff;
+  font-weight: 400;
+  font-family: "Barlow";
+}
+
+.meta {
+  display: block;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  padding-right: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.message {
+  display: block;
+}
+
+.badges {
+  float: left;
+  padding-top:5px;
+  padding-right:10px;
+}
+
+.badge {
+  margin-left: 5px;
+}
