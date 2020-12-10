@@ -2,23 +2,11 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-html,
-body {
-  width: 100%;
+html, body {
   height: 100%;
-  margin-bottom: 10px;
   overflow: hidden;
-  font-family: "Nunito";
-}
-
-#custom_html{
-  width:315px;
-  height:440px;
-  float:right;
 }
 
 #log {
